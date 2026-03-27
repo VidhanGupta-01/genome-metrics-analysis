@@ -1,0 +1,7 @@
+data:
+  raw_metrics: data/raw.csv
+  assembly_info: data/assembly_info.csv
+
+analysis:
+  outlier_threshold: 3.0
+  default_taxonomy_rank: species
