@@ -1,0 +1,15 @@
+assembly_id,gca_chain,gca_version,asm_type,asm_level,asm_name,lowest_taxon_id,is_current,refseq_accession,release_date,submitter
+1,GCA_000001405,14,haploid,Chromosome,GRCh38,9606,Y,GCF_000001405,2022-03-15,NCBI
+2,GCA_000001635,27,haploid,Chromosome,GRCm39,10090,Y,GCF_000001635,2022-06-01,NCBI
+3,GCA_000003625,6,diploid,Scaffold,CanFam4,9615,Y,GCF_000003625,2021-11-20,UCSC
+4,GCA_000002285,4,haploid,Contig,Rnor6,10116,N,GCF_000002285,2022-01-10,NCBI
+5,GCA_000001215,4,haploid,Chromosome,BDGP6,7227,Y,GCF_000001215,2021-09-05,EMBL-EBI
+```
+
+Also make sure your `data/raw.csv` has the updated content from my previous message (with `total_gap_length` added).
+
+Then commit both with:
+```
+git add data/
+git commit -m "data: align sample data with real Ensembl assembly_metrics schema"
+git push
